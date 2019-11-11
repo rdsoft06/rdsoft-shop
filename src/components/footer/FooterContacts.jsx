@@ -8,7 +8,7 @@ import theme from '../../data/theme';
 export default function FooterContacts() {
     return (
         <div className="site-footer__widget footer-contacts">
-            <h5 className="footer-contacts__title">Contact Us</h5>
+            <h5 className="footer-contacts__title"><FormattedMessage id="topbar.contacts" defaultMessage="Contact Us" /></h5>
 
             <div className="footer-contacts__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in feugiat
