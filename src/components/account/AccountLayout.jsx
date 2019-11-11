@@ -26,17 +26,17 @@ export default function AccountLayout(props) {
     const { match, location } = props;
 
     const breadcrumb = [
-        { title: 'Home', url: '' },
-        { title: 'My Account', url: '' },
+        { title: <FormattedMessage id="product.Home" defaultMessage="Home" />, url: '' },
+        { title: <FormattedMessage id="footer.My_Account" defaultMessage="My Account" />, url: '' },
     ];
 
     const links = [
-        { title: 'Dashboard', url: 'dashboard' },
-        { title: 'Edit Profile', url: 'profile' },
-        { title: 'Order History', url: 'orders' },
-        { title: 'Addresses', url: 'addresses' },
-        { title: 'Password', url: 'password' },
-        { title: 'Logout', url: 'login' },
+        { title: <FormattedMessage id="topbar.Dashboard" defaultMessage="Dashboard" />, url: 'dashboard' },
+        { title: <FormattedMessage id="topbar.Edit_Profile" defaultMessage="Edit Profile" />, url: 'profile' },
+        { title: <FormattedMessage id="topbar.Order_History" defaultMessage="Order History" />, url: 'orders' },
+        { title: <FormattedMessage id="topbar.Addresses" defaultMessage="Addresses" />, url: 'addresses' },
+        { title: <FormattedMessage id="topbar.Password" defaultMessage="Password" />, url: 'password' },
+        { title: <FormattedMessage id="acount.Logout" defaultMessage="Logout" />, url: 'logout' },
     ].map((link) => {
         const url = `${match.url}/${link.url}`;
         const isActive = matchPath(location.pathname, { path: url });
@@ -53,14 +53,14 @@ export default function AccountLayout(props) {
 
     return (
         <React.Fragment>
-            <PageHeader header="My Account" breadcrumb={breadcrumb} />
+            <PageHeader header=<FormattedMessage id="footer.My_Account" defaultMessage="My Account" /> breadcrumb={breadcrumb} />
 
             <div className="block">
                 <div className="container">
                     <div className="row">
                         <div className="col-12 col-lg-3 d-flex">
                             <div className="account-nav flex-grow-1">
-                                <h4 className="account-nav__title">Navigation</h4>
+                                <h4 className="account-nav__title"><FormattedMessage id="acount.Navigation" defaultMessage="Navigation" /></h4>
                                 <ul>{links}</ul>
                             </div>
                         </div>
