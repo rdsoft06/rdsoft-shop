@@ -12,25 +12,23 @@ import theme from '../../data/theme';
 
 export default function Footer() {
     const informationLinks = [
-        { title: 'About Us', url: '' },
-        { title: 'Delivery Information', url: '' },
-        { title: 'Privacy Policy', url: '' },
-        { title: 'Brands', url: '' },
-        { title: 'Contact Us', url: '' },
-        { title: 'Returns', url: '' },
-        { title: 'Site Map', url: '' },
+        { title: <FormattedMessage id="footer.About_Us" defaultMessage="About Us" />, url: '' },
+        { title: <FormattedMessage id="footer.Delivery_Information" defaultMessage="Delivery Information" />, url: '' },
+        { title: <FormattedMessage id="footer.Privacy_Policy" defaultMessage="Privacy Policy" />, url: '' },
+        { title: <FormattedMessage id="footer.Brands" defaultMessage="Brands" />, url: '' },
+        { title: <FormattedMessage id="footer.Contact_Us" defaultMessage="Contact Us" />, url: '' },
+        { title: <FormattedMessage id="footer.Returns" defaultMessage="Returns" />, url: '' },
+        { title: <FormattedMessage id="footer.Site_Map" defaultMessage="Site Map" />, url: '' },
     ];
-
     const accountLinks = [
-        { title: 'Store Location', url: '' },
-        { title: 'Order History', url: '' },
-        { title: 'Wish List', url: '' },
-        { title: 'Newsletter', url: '' },
-        { title: 'Specials', url: '' },
-        { title: 'Gift Certificates', url: '' },
-        { title: 'Affiliate', url: '' },
+        { title: <FormattedMessage id="footer.Store_Location" defaultMessage="Store Location" />, url: '' },
+        { title: <FormattedMessage id="footer.Order_History" defaultMessage="Order History" />, url: '' },
+        { title: <FormattedMessage id="footer.Wish_List" defaultMessage="Wish List" />, url: '' },
+        { title: <FormattedMessage id="footer.Newsletter" defaultMessage="Newsletter" />, url: '' },
+        { title: <FormattedMessage id="footer.Specials" defaultMessage="Specials" />, url: '' },
+        { title: <FormattedMessage id="footer.Gift_Certificates" defaultMessage="Gift Certificates" />, url: '' },
+        { title: <FormattedMessage id="footer.Affiliate" defaultMessage="Affiliate" />, url: '' },	
     ];
-
     return (
         <div className="site-footer">
             <div className="container">
@@ -40,10 +38,10 @@ export default function Footer() {
                             <FooterContacts />
                         </div>
                         <div className="col-6 col-md-3 col-lg-2">
-                            <FooterLinks title="Information" items={informationLinks} />
+                            <FooterLinks title=<FormattedMessage id="footer.Information" defaultMessage="Information" /> items={informationLinks} />
                         </div>
                         <div className="col-6 col-md-3 col-lg-2">
-                            <FooterLinks title="My Account" items={accountLinks} />
+                            <FooterLinks title=<FormattedMessage id="footer.My_Account" defaultMessage="My Account" /> items={accountLinks} />
                         </div>
                         <div className="col-12 col-md-12 col-lg-4">
                             <FooterNewsletter />
