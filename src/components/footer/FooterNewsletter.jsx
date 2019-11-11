@@ -44,12 +44,8 @@ export default function FooterNewsletter() {
 
     return (
         <div className="site-footer__widget footer-newsletter">
-            <h5 className="footer-newsletter__title">Newsletter</h5>
-            <div className="footer-newsletter__text">
-                Praesent pellentesque volutpat ex, vitae auctor lorem pulvinar mollis felis
-                at lacinia.
-            </div>
-
+            <h5 className="footer-newsletter__title"><FormattedMessage id="footer.Newsletter" defaultMessage="Newsletter" /></h5>
+            <div className="footer-newsletter__text"><FormattedMessage id="footer.Praesent_pellentesque_note" defaultMessage="Praesent pellentesque note" /> </div>
             <form action="" className="footer-newsletter__form">
                 <label className="sr-only" htmlFor="footer-newsletter-address">Email Address</label>
                 <input
