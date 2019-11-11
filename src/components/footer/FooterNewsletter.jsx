@@ -47,20 +47,17 @@ export default function FooterNewsletter() {
             <h5 className="footer-newsletter__title"><FormattedMessage id="footer.Newsletter" defaultMessage="Newsletter" /></h5>
             <div className="footer-newsletter__text"><FormattedMessage id="footer.Praesent_pellentesque_note" defaultMessage="Praesent pellentesque note" /> </div>
             <form action="" className="footer-newsletter__form">
-                <label className="sr-only" htmlFor="footer-newsletter-address">Email Address</label>
+                <label className="sr-only" htmlFor="footer-newsletter-address"><FormattedMessage id="footer.Address" defaultMessage="Email Address" /></label>
                 <input
                     type="text"
                     className="footer-newsletter__form-input form-control"
                     id="footer-newsletter-address"
                     placeholder="Email Address..."
                 />
-                <button type="submit" className="footer-newsletter__form-button btn btn-primary">Subscribe</button>
+                <button type="submit" className="footer-newsletter__form-button btn btn-primary"><FormattedMessage id="footer.Subscribe" defaultMessage="Subscribe" /></button>
             </form>
 
-            <div className="footer-newsletter__text footer-newsletter__text--social">
-                Follow us on social networks
-            </div>
-
+            <div className="footer-newsletter__text footer-newsletter__text--social"><FormattedMessage id="footer.Follow_us_on_social_networks" defaultMessage="Follow us on social networks" /></div>
             <ul className="footer-newsletter__social-links">
                 {socialLinksList}
             </ul>
