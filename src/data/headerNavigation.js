@@ -159,7 +159,7 @@ export default [
     },
     {
         title: 'Buy Theme',
-        url: 'https://themeforest.net/item/stroyka-tools-store-react-ecommerce-template/23909258',
+        url: '',
         props: {
             external: true,
             target: '_blank',
