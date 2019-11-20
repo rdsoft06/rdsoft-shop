@@ -1,14 +1,14 @@
 export default {
-    name: 'Stroyka',
-    fullName: 'Stroyka - Tools Store React eCommerce Template',
-    url: 'https://themeforest.net/item/stroyka-tools-store-react-ecommerce-template/23909258',
+    name: 'troyka',
+    fullName: 'React eCommerce Template',
+    url: '',
     author: {
-        name: 'Kos',
-        profile_url: 'https://themeforest.net/user/kos9',
+        name: 'os',
+        profile_url: '',
     },
     contacts: {
-        address: '715 Fake Street, New York 10021 USA',
-        email: 'stroyka@example.com',
-        phone: '(800) 060-0730',
+        address: '715 Fak Street, New York 10021 USA',
+        email: 's@e.com',
+        phone: '(800) 060-070',
     },
 };

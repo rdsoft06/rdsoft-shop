@@ -41,9 +41,9 @@ function SitePageContactUs() {
 
                                         <div className="contact-us__address">
                                             <p>
-                                                715 Fake Ave, Apt. 34, New York, NY 10021 USA
+                                                715 Fak Ave, Apt. 34, New York, NY 10021 USA
                                                 <br />
-                                                Email: stroyka@example.com
+                                                Email: s@e.com
                                                 <br />
                                                 Phone Number: +1 754 000-00-00
                                             </p>
